@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>ePI Creator</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<script>
+function process(_id){
+    const selectedFile = document.getElementById('input').files[0];
+
+    console.log( selectedFile);
+   
+};
+</script>
+
+</head>
+
+<body>
+    <py-script src="./creator.py"></py-script>
+
+    <h1>ePI Creator</h1>
+
+<p>Please upload the excel file for creating the FSH resources.</p>
+
+
+    <py-config>
+        packages = [
+         'pandas',"jinja2","numpy","openpyxl"
+         ]
+      </py-config>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+      
+      <input type="file" id="input" multiple />
+<br>
+      <button py-click="process()">Click me</button>
+
+</body>
+</html>
