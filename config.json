@@ -1,0 +1,19 @@
+{
+    "packages": ["pandas","jinja2","numpy","openpyxl"],
+    "fetch": [{
+        "files": ["./templates/AdministrableProductDefinition.fsh",
+        "./templates/Substance.fsh",
+        "./templates/Bundle.fsh",
+        "./templates/Composition.fsh",
+        "./templates/Ingredient.fsh",
+        "./templates/ManufacturedItemDefinition.fsh",
+        "./templates/MedicinalProductDefinition.fsh",
+        "./templates/Organization.fsh",
+        "./templates/RegulatedAuthorization.fsh",
+        "./templates/PackagedProductDefinition.fsh",
+        "./templates/ClinicalUseDefinition.fsh"
+
+    
+    ]
+      }]
+  }
